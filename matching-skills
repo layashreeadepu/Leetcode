@@ -1,0 +1,9 @@
+SELECT
+  candidate_id
+FROM candidates
+WHERE 
+skill IN ('Python', 'Tableau', 'PostgreSQL')
+group by candidate_id 
+having count(skill) = 3
+
+https://datalemur.com/questions/matching-skills
